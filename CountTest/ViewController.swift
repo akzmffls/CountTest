@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var count = 0
+    
+    @IBOutlet var Countlbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +22,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
-
+    
+    @IBAction func CountBt(_ sender: UIButton) {
+        count = count + 1
+        Countlbl.text = "\(count)"
+    }
+    
+    
+    
 }
 
