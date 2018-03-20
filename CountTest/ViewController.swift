@@ -30,6 +30,10 @@ class ViewController: UIViewController {
         Countlbl.text = "\(count)"
     }
     
+    @IBAction func ResetBt(_ sender: UIButton) {
+        count = 0
+        Countlbl.text = "\(count)"
+    }
     
     
 }
